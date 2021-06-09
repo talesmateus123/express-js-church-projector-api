@@ -3,8 +3,8 @@ const { exec } = require('child_process')
 
 const app = express()
 
-app.get("/poweroff", () => exec("poweroff"))
+app.get('/poweroff', () => exec('poweroff'))
 
-app.get("/reboot", () => exec("reboot"))
+app.get('/reboot', () => exec('reboot'))
 
 app.listen(3000)
